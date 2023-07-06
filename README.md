@@ -4,6 +4,6 @@
 
 #### Feature list
 
-* Feature 1
-* Feature 2
-* Feature 3
+* Feature 1 [fax]
+* Feature 2 [xerox]
+* Feature 3 [none]

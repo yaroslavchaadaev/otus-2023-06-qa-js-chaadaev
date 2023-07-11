@@ -31,6 +31,8 @@ kolobok(true);
 
 const newYear = (characterName) => {
   if (typeof characterName === "string") {
+    characterName = characterName.toLowerCase();
+
     let customCharacterName = "";
 
     switch (characterName) {
@@ -51,7 +53,7 @@ const newYear = (characterName) => {
   }
 };
 
-newYear("дед мороз");
-newYear("снегурочка");
+newYear("ДЕД МОРОЗ");
+newYear("снегурОчка");
 newYear("колобок");
 newYear(5);

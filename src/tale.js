@@ -6,22 +6,18 @@ const kolobok = (characterName) => {
 
     switch (characterName) {
       case "дедушка":
-        console.log("Я от дедушки ушел!");
-        break;
+        return "Я от дедушки ушел!";
       case "заяц":
-        console.log("Я от зайца ушел!");
-        break;
+        return "Я от зайца ушел!";
       case "лиса":
-        console.log("Меня съели...");
-        break;
+        return "Меня съели...";
       default:
-        console.log(`Я не знаю персонажа с именем ${characterName}`);
-        break;
+        return `Я не знаю персонажа с именем ${characterName}`;
     }
   }
 
   if (typeof characterName !== "string") {
-    console.log("Укажите имя персонажа в формате строки");
+    return "Укажите имя персонажа в формате строки";
   }
 };
 
@@ -35,21 +31,27 @@ kolobok(true);
 
 const newYear = (characterName) => {
   if (typeof characterName === "string") {
+    let customCharacterName = "";
+
     switch (characterName) {
       case "дед мороз":
       case "снегурочка":
         for (let i = 0; i < 3; i++) {
-          console.log(`${characterName}!`);
+          customCharacterName += characterName + "!";
+          customCharacterName += " ";
         }
-        break;
+        return customCharacterName;
       default:
-        console.log(`Введите корректное имя персонажа`);
+        return "Введите корректное имя персонажа";
     }
   }
 
   if (typeof characterName !== "string") {
-    console.log("Укажите имя персонажа в формате строки");
+    return "Укажите имя персонажа в формате строки";
   }
 };
 
 newYear("дед мороз");
+newYear("снегурочка");
+newYear("колобок");
+newYear(5);

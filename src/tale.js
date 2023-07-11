@@ -27,7 +27,7 @@ kolobok("Лиса");
 kolobok("Рандом");
 kolobok(true);
 
-// Задание 2 ПЕРЕДЕЛАТь
+// Задание 2
 
 const newYear = (characterName) => {
   if (typeof characterName === "string") {

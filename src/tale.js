@@ -57,3 +57,5 @@ newYear("ДЕД МОРОЗ");
 newYear("снегурОчка");
 newYear("колобок");
 newYear(5);
+
+console.log(process.env)
